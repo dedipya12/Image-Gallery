@@ -1,0 +1,124 @@
+
+<!-- line no ctrl f..camera, picture is not working currently span one -->
+<!-- The method of getting the image url has changed since this video was created. If  you find an image you like you'll need to right click it, select "Inspect" then copy the url from the "src" attribute in the HTML img tag 
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Image Gallery</title>
+ 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+ 	<link rel="stylesheet" href="font-awesome.min.css">
+ 	<!-- we included font awesome library so to include camera and picture below one -->
+ 	<link rel="stylesheet" type="text/css" href="gallery.css">
+ 	
+ 	
+ 	<!-- our styling should come after bootstrap styling -->
+ </head>
+ <body>
+ <!-- below whole navbar we copied from navbar.html -->
+ <!-- if we replace below class of navbar navbar-default to navbar navbar-inverse 
+ the heading the top navbar will invert its color..it will become black -->
+ <!-- navbar-fixed-top to fix the navbar from top while shrinking window -->
+ <nav class="navbar navbar-inverse navbar-fixed-top"><!-- 
+    using navbar header class and then a tag navbar brand class it will show as company name
+    # in a tag indicates link will go to same page -->
+    <div class="container">
+      <div class="navbar-header">
+        <!-- to get hamburger below 6 lines are used from default navbar-->
+        <!-- here data-target with # value should match to everything under collapse id value -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <!-- each below span is responsible for one bar in hamburger -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- this glyphicon taken from bootstrap.com to add image -->
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+      </div>
+      <!-- now with one more div, here instead of div we can use ul also I can add things right to koffee with class nav navbar-nav then within li we can add whatever element we want important..whatever we will add in below class: collapse navbar-collapse, will disappear after shrinking window to some small value 
+    so use it in our navbar-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  <!-- added from default navbar -->
+      	<ul class="nav navbar-nav">
+	      	<li><a href="#">About</a></li>
+	      	<li><a href="#">Contact</a></li>
+	    </ul>
+	    <!-- for right allignment use class nav navbar-nav navbar-right -->
+	    <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#">Sign Up</a></li>
+	      	<li><a href="#">Login</a></li>
+	    </ul>
+	   </div> 	
+     </nav>
+ <div class="container">
+ 	  <div class="jumbotron">
+ 	  	 <h1><i class="fa fa-camera-retro" aria-hidden="true"></i> The Image Gallery</h1>
+ 	  	 <p> A bunch of beautiful images</p>
+ 	  </div>
+ 	<!--   we need only single row as we are assigning 4 point to each row after 12 it directly knows that it has to go in next line -->
+ 	<!-- col-sm-6 when window hits small breakpoint and middle breakpoint it still stays on 2 images -->
+ 	  <div class="row">
+ 	  	<div class="col-lg-4 col-sm-6 ">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="http://i.imgur.com/qK42fUu.jpg-">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6 ">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9 ">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ 	  	<div class="col-lg-4 col-sm-6">
+ 	  	<!-- to shrink image in a single column and to make border around it use class="thumbnail" make this div around image-->
+ 	  	   <div class="thumbnail">
+ 	  		 <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+ 	  	   </div>
+ 	  	</div>
+ </div>
+ 
+ <script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <!-- bootstraps javascript file we added from website below link -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+ </body>
+ </html>
