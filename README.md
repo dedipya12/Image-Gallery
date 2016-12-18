@@ -1,2 +1,2 @@
 # Image-Gallery
-Image Gallery design using HTML, CSS and Bootstrap
+Image Gallery design using HTML, CSS, jQuery and Bootstrap
